@@ -99,9 +99,20 @@
   box-shadow: 0 0 0 0.2rem rgba(27, 186, 170, 0.5);
 }
     
+.bg-beta {
+	  background: #59B9DE;
+	}
+    
 </style>
     
   <body>
+<!-- This is where the temporary blue bar for statGNV beta starts: -->
+    <nav class="container-fluid bg-beta" style="height: 1.7rem">
+        <span class="text-left" style="color: white">
+	       <p class="font-italic"><strong>WelcomeGNV Beta </strong><a href="mailto:designGNV@cityofgainesville.org" style="color: white; text-decoration: underline">Email us</a> with feedback.</p>
+        </span>
+    </nav>  
+<!--This is where the nav bar starts-->
     <nav class="navbar navbar-expand-lg cog-bg-navy">
        <a class="navbar-brand cog-white" href="index.html"><h4 style="font-weight: bolder">welcomeGNV</h4></a>
        <button class="navbar-toggler cog-jade" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -116,21 +127,18 @@
                 Explore Pages
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                   <a class="dropdown-item" href="visiting.html">Visiting</a>
+                   <a class="dropdown-item" href="moving.html">Moving to Gainesville</a>
                    <div class="dropdown-divider"></div>
-                   <a class="dropdown-item" href="moving.html">Moving</a>
+                   <a class="dropdown-item" href="studentguide.html">Student Guide to Gainesville</a>
+                   <div class="dropdown-divider"></div>                    
+                    <a class="dropdown-item" href="" style="color:gray"><i>Living (Coming Soon)</i></a>
                    <div class="dropdown-divider"></div>
-                   <a class="dropdown-item" href="living.html">Living</a>
-                   <div class="dropdown-divider"></div>
-                   <a class="dropdown-item" href="studentguide.html">Student Guide</a>
-                   <div class="dropdown-divider"></div>
-                   <a class="dropdown-item" href="professionalguide.html">Professional's Guide</a>
+                    <a class="dropdown-item" href="" style="color: gray"><i>Visiting (Coming Soon)</i></a>
+                   <div class="dropdown-divider"></div>                    
+                    <a class="dropdown-item" href="" style="color: gray"><i>Professional's Guide (Coming Soon)</i></a>
                 </div>
              </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          </form>
        </div>
     </nav>
 
@@ -154,34 +162,68 @@
        <br>
        <br>
        <div class="row">
-          <div class="col-md-4">
-             <div class="card">
-                <div class="card-body">
-                   <h4 class="card-title">Visiting Gainesville</h4>
-                   <p class="card-text">Here's what you should check out while you're in town!</p>
-                   <br><br>
-                   <a href="visiting.html" class="btn btn-primary cog-btn-jade">Cool things in town</a>
-                </div>
-             </div>
-          </div>
-          <div class="col-md-4">
+          <div class="col-md">
              <div class="card">
                 <div class="card-body">
                    <h4 class="card-title">Moving to Gainesville</h4>
                    <p class="card-text">A helpful guide to get settled in Gainsville</p>
-                   <br><br><br>
+                   <br><br>
                    <a href="moving.html" class="btn btn-primary cog-btn-jade">Moving Here</a>
                 </div>
              </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md">
+             <div class="card">
+                <div class="card-body">
+                   <h4 class="card-title">Student Guide to Gainesville</h4>
+                   <p class="card-text">Reach beyond campus and explore what Gainesville has to offer!</p>
+                   <br><br>
+                   <a href="living.html" class="btn btn-primary cog-btn-jade">Student Guide</a>
+
+                </div>
+             </div>
+          </div>
+       </div>
+       <br/>
+       <br/>
+       <br>
+    </div>
+
+<!--Coming Soon-->      
+   <div class="container">
+       <div class="row text-center">
+          <div class="col-lg-6 offset-lg-3"></div>
+       </div>
+       <br>
+       <br>
+       <div class="row">
+          <div class="col-md">
+             <div class="card">
+                <div class="card-body">
+                   <h4 class="card-title">Visiting Gainesville</h4>
+                   <p class="card-text">What to do while you're in town</p>
+						<br><span class="badge badge-pill badge-secondary">Coming Soon</span>                    
+                   <br><br>
+                </div>
+             </div>
+          </div>
+          <div class="col-md">
              <div class="card">
                 <div class="card-body">
                    <h4 class="card-title">Living in Gainesville</h4>
-                   <p class="card-text">Looking to mix things up? Get involved or check out something new!</p>
+                   <p class="card-text">Get involved in Gainesville</p>
+						<br><span class="badge badge-pill badge-secondary">Coming Soon</span>                    
                    <br><br>
-                   <a href="living.html" class="btn btn-primary cog-btn-jade">Shake it up!</a>
-
+                </div>
+             </div>
+          </div>
+          <div class="col-md">
+             <div class="card">
+                <div class="card-body">
+                   <h4 class="card-title">Professional's Guide</h4>
+                   <p class="card-text">Gainesville is a great place to work!</p>
+						<br><span class="badge badge-pill badge-secondary">Coming Soon</span>                    
+                   <br><br>
                 </div>
              </div>
           </div>
