@@ -1,26 +1,22 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-	<!-- This is the home page for myGNV engagement.-->
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Engagement with the City of Gainesville" >
-    <meta name = "keywords" content="engagement, events, surveys, city of gainesville, gainesville, florida, feedback, local government, gnv, myGNV">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>welcomeGNV</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-	<!-- Start FontAwesome Kit -->
-	<script src="https://kit.fontawesome.com/7c02223738.js" crossorigin="anonymous"></script>
-	<!-- End FontAwesome Kit. -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
     
-    <!-- Hotjar Tracking Code for https://cityofgainesville.github.io/mygnvfeedback/ -->
+    <!-- FontAwesome Kit -->
+    <script src="https://kit.fontawesome.com/7c02223738.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/latest/css/pro.min.css" media="all"><link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/latest/css/pro-v4-font-face.min.css" media="all"><link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/latest/css/pro-v4-shims.min.css" media="all">
+      
+    <!-- Hotjar Tracking Code for https://cityofgainesville.github.io/welcomegnv/index.html -->
       <script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:1674954,hjsv:6};
+        h._hjSettings={hjid:1674969,hjsv:6};
         a=o.getElementsByTagName('head')[0];
         r=o.createElement('script');r.async=1;
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
@@ -28,441 +24,236 @@
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
       </script>
 
-	
-
-    <title>myGNV</title>
   </head>
-<!-- Start some CSS edits for the jumbotron (the hero image with the statGNV title) and the background for the header and footer following the city's color guidelines.-->
+    
 <style>
-.jumbotron {
-      background-image: url("img/home-dark.jpg");
-      background-size: cover;
-      height: 15rem;
-      padding-top: 2.5rem;
+    .cog-bg-jade {
+        background-color: #1bbaaa;
     }
+    .cog-bg-navy {
+          background-color: #0F191C;
+    }
+    .cog-br-jade {
+          border-color: #1bbaaa;
+    }
+    .cog-btn-jade {
+        background-color: #1bbaaa;
+        border-color: #1bbaaa;
+        color: #ffffff !important;
+    }
+	.cog-jade {
+        color: #1bbaaa;
+      }
+    .cog-white {
+        color: #ffffff !important;
+      }
+    .jumbotron {
+        background-image: url("img/coverphoto.jpg");
+        background-size: cover;
+        height: 20rem
+    }
+    #jumbotron-title{
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .margins{
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    a:link{
+        color: #1BBAAA;
+    }
+    a:visited{
+        color: #1BBAAA;
+    }
+    a:hover{
+        color: #4AB1E4;
+    }
+    a:active{
+        color: #0e1c29
+    }
+    .padding1{
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    .section-title{
+        background-color: rgba(27, 186, 170, 0.1);
+    }
+    
+.btn-outline-cog {
+  color: #1bbaaa;
+  border-color: #1bbaaa;
+}
+
+.btn-outline-cog:hover {
+  color: #fff;
+  background-color: #1bbaaa;
+  border-color: #1bbaaa;
+}
+
+.btn-outline-cog:focus, .btn-outline-info.focus {
+  box-shadow: 0 0 0 0.2rem rgba(27, 186, 170, 0.5);
+}
+
+.btn-outline-cog.disabled, .btn-outline-info:disabled {
+  color: #1bbaaa;
+  background-color: transparent;
+}
+
+.btn-outline-cog:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active,
+.show > .btn-outline-info.dropdown-toggle {
+  color: #fff;
+  background-color: #1bbaaa;
+  border-color: #1bbaaa;
+}
+
+.btn-outline-cog:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-info.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(27, 186, 170, 0.5);
+}
+    
 .bg-beta {
 	  background: #59B9DE;
 	}
-.bg-blue-cool-90 {
-	  background: #0F191C;
-	}
-.navbar-dark {
-		background: #0F191C;
-	}
-.cog-coutline {
-        outline: #0F191C;
-    }
-.bg-cog-jade {
-        background: #1bbaaa;
-        opacity: 0.5;
-    }
-.text-cog-black {
-        color: #000;
-        opacity: 1 !important;
-    }
-    
-.text-cog-jade {
-        color: #1DC2AE !important;
-    }
-    
-body {
-    background: #F5F6F7;
-    }
-
-.margins{
-    padding-left: 5rem;
-    padding-right: 5rem;
-    }
-    
-.margins2{
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-top: 2rem;
-    }
-    
-.margins3{
-    padding-left: 2rem;
-    padding-right: 2rem;
-    }
-   
-.bg-header{
-    background: #E0F7F6 !important;    
-    }
-    
-.bg-section1{
-    background: #EDEFF0 !important;    
-    }
-    
-.bg-section2{
-    background: #E0F7F6 !important;    
-    }
-
-.bg-section3{
-    background: #EDEFF0 !important;    
-    }
-    
-a:link{
-    color: black;
-    }
-
-a:hover{
-    color: #1DC2AE;   
-    }
-    
-a:visited{
-    color: black;   
-    }
     
 </style>
-<!-- End CSS edits. -->
-
-<body>
-<!-- This is where the temporary blue bar for myGNV beta starts: -->
-<nav class="container-fluid bg-beta" style="height: 1.7rem">
-  <span class="text-left" style="color: white">
-	  <p class="font-italic"><strong>myGNV Beta </strong><a href="mailto:designGNV@cityofgainesville.org" style="color: white; text-decoration: underline">Email us</a> with feedback.</p>
-  </span>
-</nav>
-<!-- This is where the temporary blue bar ends and the site's navbar starts: -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-blue-cool-90">
-  <a class="navbar-brand bg-blue-cool-90" href="index.html"><h4 style="font-weight: bolder; font-color: white;">myGNV</h4></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse navbar-dark bg-blue-cool-90" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-	  <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-	  <!--li class="nav-item">
-        <a class="nav-link disabled" href="#">Tutorials</a>
-      </li-->
-    </ul>
-  </div>
-</nav>
-<!-- This is where the site's navbar ends. -->
     
-    
-<!--Header-->
-<div class="container-fluid m-0 bg-header">
-  <div class="text-center">
-    <br><br>
-      <h1>We Want to Hear from You!</h1>
-    <br><br><br>
-  </div>
-  <div class="row">
-    <div class="col-sm-2">
-    </div>
-    <div class="col-sm-2">
-        <div class="card text-center bg-header border-0" href="#section1">
-        <a href="#section1">
-            <i class="fal fa-laptop fa-5x" aria-hidden="true"></i> 
-            <br><br>
-            <h4>Online</h4>
-        </a>
-            <br><br>
+  <body>
+<!-- This is where the temporary blue bar for statGNV beta starts: -->
+    <nav class="container-fluid bg-beta">
+        <div class="row ml-1">
+        <span class="text-left" style="color: white">
+	       <h5 class="font-italic">We're testing <strong>welcomeGNV</strong> please <a href="https://cityofgainesville.iad1.qualtrics.com/jfe/form/SV_81BjX47Ow1PhnkF" style="color: white; text-decoration: underline" target="_blank">give us feedback</a></h5>
+        </span>
         </div>
-    </div> 
-    <div class="col-sm-1">
-    </div>
-    <div class="col-sm-2">
-        <div class="card text-center bg-header border-0" href="#section1">
-        <a href="#section2">
-            <i class="fal fa-users fa-5x" aria-hidden="true"></i> 
-            <br><br>
-            <h4>In-Person</h4>
-        </a>
-            <br><br>
-        </div>
-    </div>
-    <div class="col-sm-1">
-    </div>
-    <div class="col-sm-2">
-        <div class="card text-center bg-header border-0" href="#section1">
-        <a href="#section3">
-            <i class="fal fa-sparkles fa-5x" aria-hidden="true"></i> 
-            <br><br>
-            <h4>Test New Designs</h4>
-        </a>
-            <br><br>
-        </div>
-    </div>
-    <div class="col-sm-2">
-    </div>
-  </div>
-</div>
-<!--End Header-->
-    
-
-
-    
-    
-<!--First Row-->
-<div class="container-fluid m-0 bg-section1">   
-    <br><br>
-    <div class="row ml-5 mr-5" id="section1">
-          <br>
-          <h2>Online Surveys and Studies</h2>
-          <br>
-    </div>
-    
-<br><br>
-    
-     <div class="row ml-5 mr-5">
-           <div class="col-sm-6 text-center">            				
-                <div class="card h-100">
-                <br>
-            <div class="card-title">
-                <h4 class="card-title text-center"><strong>Urban Agriculture Ordinance</strong></h4>
-			<div class="card-body">
-                <i class="fal fa-farm fa-4x" aria-hidden="true"></i>
-                <br><br>
-                <p class="card-text text-left">The City of Gainesville supports efforts to improve our local food system and increase access to fresh, healthy food for all Gainesville neighbors. We invite you to provide feedback on a proposed draft for an Urban Agriculture Ordinance for our Gainesville that aims to support urban agricultural practices within our City limits. <br><br> If adopted, this ordinance will be included as an amendment to the City of Gainesville's Land Development Code. You can provide your feedback on the draft ordinance language and the concept of urban agriculture in Gainesville by clicking the button below. <br><br> The platform will be open from <strong>January 17th to February 21st, 2020.</strong> We look forward to our neighbors’ feedback and appreciate your participation in the City’s decision making processes.</p>
-                      <a class="btn btn-outline-info align-bottom" style="vertical-align: bottom" href="https://tinyurl.com/Urban-Ag-Ordinance-Feedback" target="_blank">
-						<span>Click Here</span>
-	  			      </a>
-                   </div>
-			    </div>
+    </nav>   
+<!--This is where the nav bar starts-->
+    <nav class="navbar navbar-expand-lg cog-bg-navy">
+       <a class="navbar-brand cog-white" href="index.html"><h4 style="font-weight: bolder">welcomeGNV</h4></a>
+       <button class="navbar-toggler cog-jade" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+                <a class="nav-link cog-white" href="index.html">Home<span class="sr-only">(current)</span></a>
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle cog-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Explore Pages
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="moving.html">Moving to Gainesville</a>
+                   <div class="dropdown-divider"></div>
+                   <a class="dropdown-item" href="studentguide.html">Student Guide to Gainesville</a>
+                   <div class="dropdown-divider"></div>                    
+                    <a class="dropdown-item" href="" style="color:gray"><i>Living (Coming Soon)</i></a>
+                   <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="" style="color: gray"><i>Visiting (Coming Soon)</i></a>
+                   <div class="dropdown-divider"></div>                    
+                    <a class="dropdown-item" href="" style="color: gray"><i>Professional's Guide (Coming Soon)</i></a>
                 </div>
-		   </div>  	
-           <div class="col-sm-6 text-center">            				
-                <div class="card h-100">
-                <br>
-            <div class="card-title">
-                <h4 class="card-title text-center"><strong>Survey on Homelessness in Gainesville</strong></h4>
-			<div class="card-body">
-                <i class="fal fa-poll-h fa-4x" aria-hidden="true"></i>
-                <br><br>
-                <p class="card-text text-left">This survey has been created by University of Florida students interning at the City of Gainesville. We aim to use this survey to better understand community members' feelings towards people experiencing homelessness in the greater Gainesville area. <br><br> The survey results will inform our creation of a proposed awareness campaign that aims to address common misperceptions of homelessness. The results will also inform suggestions for possible resources that could be offered to assist people experiencing homelessness. The information gathered through this survey will be shared with local providers who are currently serving people experiencing homelessness. This survey is anonymous and will take 5-7 minutes to complete.</p>
-                <br><br>
-                      <a class="btn btn-outline-info align-bottom" style="vertical-align: bottom" href="https://tinyurl.com/SurveyOnHomelessness" target="_blank">
-						<span>Take the Survey</span>
-	  			      </a>
-                   </div>
-			    </div>
-                </div>
-		   </div>
+             </li>
+          </ul>
        </div>
-    
-    <br>
-    
-       <div class="row ml-5 mr-5">
-           <div class="col-sm-6 text-center">            				
-                <div class="card h-100">
-                <br>
-            <div class="card-title">
-                <h4 class="card-title text-center"><strong>Gainesville Community Redevelopment Area</strong></h4>
-			<div class="card-body">
-                <i class="fal fa-city fa-4x" aria-hidden="true"></i>
-                <br><br>
-                <p class="card-text text-left">This survey is for the GCRA Draft Reinvestment Plan. It provides an opportunity for neighbors to offer feedback and prioritize objectives identified in the draft plan. Feedback received during this time will inform the final development of the plan, which will be presented to the City Commission on March 5, 2020, for consideration and approval. <br><br> The survey will be available until <strong>February 29th.</strong></p>
-                      <a class="btn btn-outline-info align-self-end" style="vertical-align: bottom" href="https://gainesvillecra.us14.list-manage.com/track/click?u=081a71ebd67d49b6a70c846b6&id=2b99775ce8&e=9ef3eb2905" target="_blank">
-						<span>Take the survey</span>
-	  			      </a>
-                   </div>
-			    </div>
-                </div>
-		   </div>
-           <div class="col-sm-6 text-center">            				
-                <div class="card h-100">
-                <br>
-            <div class="card-title">
-                <h4 class="card-title text-center"><strong>Website Feedback</strong></h4>
-			<div class="card-body">
-                <i class="fal fa-desktop fa-4x" aria-hidden="true"></i>
-                <br><br>
-                <p class="card-text text-left">This survey is to help us understand your experience with the City of Gainesville website. It should take approximately 5-10 minutes. We will be incorporating your feedback into the website redesign.</p>
-                <br><br><br><br>
-                      <a class="btn btn-outline-info align-bottom" style="vertical-align: bottom" href="https://forms.gle/GcFrcomXC1XRi91r7" target="_blank">
-						<span>Submit Feedback</span>
-	  			      </a>
-                   </div>
-			    </div>
-                </div>
-		   </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid text-center">
+       <div class="row">
+         <div class="mx-auto" style="width: 50rem;">
+         <div class="card" id="jumbotron-title">
+       <br>
+       <h1 class="display-4 cog-white">Welcome to Gainesville</h1>
+       <p class="lead cog-white">Explore everything Gainesville has to offer!</p>
+       <br>
+         </div>
+         </div>
        </div>
-    
-    <br>
-    
-    <div class="row ml-5 mr-5">
-          	<div class="col-sm-6 text-center">            				
-                <div class="card h-100">
-                <br>
-            <div class="card-title">
-                <h4 class="card-title text-center"><strong>Join our Design Feedback Group</strong></h4>
-			<div class="card-body">
-                <i class="fal fa-comments fa-4x" aria-hidden="true"></i>
-                <br><br>
-                <p class="card-text text-left">We want to hear your voice. The City of Gainesville is redesigning local government through neighbor-centered design and innovation. As we tackle tough problems in our city, we invite those who live, work, and study here to participate and collaborate on new solutions. Sign up to be notified of surveys and design testing you can complete for the City of Gainesville.</p>
-                      <a class="btn btn-outline-info align-bottom" style="vertical-align: bottom" href="https://cityofgainesville.typeform.com/to/hu5Mcz" target="_blank">
-						<span>Sign Up Here</span>
-	  			      </a>
-                   </div>
-			    </div>
-                </div>
-		   </div>
-           <!--<div class="col-sm-6 text-center">            				
-                <div class="card h-100">
-                <br>
-            <div class="card-title">
-                <h4 class="card-title text-center"><strong>Website Feedback</strong></h4>
-			<div class="card-body">
-                <i class="fal fa-desktop fa-4x" aria-hidden="true"></i>
-                <br><br>
-                <p class="card-text text-left">This survey is to help us understand your experience with the City of Gainesville website. It should take approximately 5-10 minutes. We will be incorporating your feedback into the website redesign.</p>
-                <br><br>
-                      <a class="btn btn-outline-info align-bottom" style="vertical-align: bottom" href="https://forms.gle/GcFrcomXC1XRi91r7" target="_blank">
-						<span>Submit Feedback</span>
-	  			      </a>
-                   </div>
-			    </div>
-                </div>
-		   </div>-->
-       </div>
-    <br><br>
     </div>
-<!--End First Row-->
-    
-
-    
-<!--Second Row-->
-    
-<div class="container-fluid m-0 bg-section2">  
-    <br><br>
-    <div class="row ml-5 mr-5" id="section2">
-          <br>
-          <h2>In-person Events</h2>
-          <br>
-    </div>
-    <br>    
-  <div class="row ml-5 mr-5">
-    <div class="col-sm">
-     <div class="card bg-info h-100" outline-color: #0F191c>
-         <h4 class="card-title text-center text-white mt-2">GCRA Final Draft Reinvestment Plan Workshop</h4>
-            <div class="card h-100">
-            <div class="ml-5 mr-5 mt-5">                       
-             <div class="col-sm">
-<!--EVENT DESCRIPTION-->                    
-                 <p class="card-text">The GCRA will be holding a public workshop to prioritize specific initiatives that will make up the 10 Year Reinvestment Plan. <br><br> At the workshop, the Consolidated Reinvestment Plan draft document will be presented. The public will have an opportunity to validate its findings and help prioritize the investments into the district for the next 10 years. <br><br> The A. Quinn Jones Center is located at 1108 NW 7th Avenue in the Fifth Avenue Neighborhood.  Parking is available in the A. Quinn Jones Center parking lot, with additional spaces across the street at the A. Quinn Jones Museum and Cultural Center. Refreshments will be provided.<br><br> <strong>Wednesday, February 19th, 2020 from 5:30-7:30pm</strong> <br><br> Location: <a href="https://goo.gl/maps/y8rAbKJ5vpcuVqNo9" class="text-cog-jade" style="text-decoration: underline" target="_blank">A. Quinn Jones Center</a></p>
-             <br><br> 
-            </div>
-            </div>
-            </div>
-        </div>
-      </div>
-      <!--<div class="col-sm">
-      <div class="card bg-info h-100" outline-color: #0F191c>
-         <h4 class="card-title text-center text-white mt-2">2020 Census Block Party</h4>
-            <div class="card h-100">
-            <div class="ml-5 mr-5 mt-5">                       
-             <div class="col-sm">
-<!--EVENT DESCRIPTION-->                    
-                 <!--<p class="card-text">The City of Gainesville is spreading the word about the importance of the 2020 U.S. Census and working to ensure a complete count. The event features music, free pizza from Papa John's, an opportunity to win concert tickets and more. <br><br> <strong>Friday, January 31st, 2020 from 4-7pm</strong> <br><br> Location: <a href="https://goo.gl/maps/ZHoMgsdpWaD2r6i79" class="text-cog-jade" style="text-decoration: underline">Northeast 8th Ave at the corner near Bartley Temple</a></p>
-             <br><br> 
-            </div>
-            </div>
-            </div>
-        </div>
-      </div>-->
-  </div>
-
-<br><br>
-    
-</div> 
-<!--End Second Row-->
-    
-    
-<!--Third Row-->
-    
-<div class="container-fluid m-0 bg-section3"> 
-    <br><br>
-    <div class="row ml-5 mr-5" id="section3">
-          <br>
-          <h2>Test New Designs</h2>
-    </div>   
-<br>
-    
-    <div class="row ml-5 mr-5">
-          	<div class="col-sm-6 text-center">            				
-                <div class="card h-100">
-                <br>
-            <div class="card-title">
-                <h4 class="card-title text-center"><strong>welcomeGNV</strong></h4>
-			<div class="card-body">
-                <i class="fal fa-handshake fa-4x" aria-hidden="true"></i>
-                <br><br>
-                <p class="card-text text-left">This website is meant to help new residents and students get settled into Gainesville. Explore the site and submit feedback by clicking on the blue bar at the top of the page.</p>
-                <br>
-                      <a class="btn btn-outline-info align-bottom" style="vertical-align: bottom" href="https://cityofgainesville.github.io/welcomeGNV/" target="_blank">
-						<span>Click Here</span>
-	  			      </a>
-                   </div>
-			    </div>
-                </div>
-		   </div>
-           <div class="col-sm-6 text-center">            				
-                <div class="card h-100">
-                <br>
-            <div class="card-title">
-                <h4 class="card-title text-center"><strong>statGNV</strong></h4>
-			<div class="card-body">
-                <i class="fal fa-chart-line fa-4x" aria-hidden="true"></i>
-                <br><br>
-                <p class="card-text text-left">statGNV lets you explore the City of Gainesville's data through interactive charts, graphs, and maps. You can now easily understand complex city data and track important trends in areas such as public safety, basic city services, human services, economic development, and others.</p>
-                      <a class="btn btn-outline-info align-bottom" style="vertical-align: bottom" href="https://stat.cityofgainesville.org/" target="_blank">
-						<span>Click Here</span>
-	  			      </a>
-                   </div>
-			    </div>
-                </div>
-		   </div>
+ 
+   <div class="container">
+       <div class="row text-center">
+          <div class="col-lg-6 offset-lg-3"></div>
        </div>
-    <br><br>
-    
-       <!--<div class="row ml-5 mr-5">
-          	<div class="col-sm-6 text-center">            				
-                <div class="card h-100">
-                <br>
-            <div class="card-title">
-                <h4 class="card-title text-center"><strong>TITLE</strong></h4>
-			<div class="card-body">
-                <i class="fal fa-farm fa-5x" aria-hidden="true"></i>
-                <br><br>
-                <p class="card-text text-left">DESCRIPTION</p>
-                      <a class="btn btn-outline-info align-bottom" style="vertical-align: bottom" href="ADD LINK" target="_blank">
-						<span>BUTTON TEXT</span>
-	  			      </a>
-                   </div>
-			    </div>
+       <br>
+       <br>
+       <div class="row">
+          <div class="col-md">
+             <div class="card">
+                <div class="card-body">
+                   <h4 class="card-title">Moving to Gainesville</h4>
+                   <p class="card-text">A helpful guide to get settled in Gainesville</p>
+                   <br><br>
+                   <a href="moving.html" class="btn btn-primary cog-btn-jade">Moving Here</a>
                 </div>
-		   </div>
-           <div class="col-sm-6 text-center">            				
-                <div class="card h-100">
-                <br>
-            <div class="card-title">
-                <h4 class="card-title text-center"><strong>TITLE</strong></h4>
-			<div class="card-body">
-                <i class="fal fa-farm fa-5x" aria-hidden="true"></i>
-                <br><br>
-                <p class="card-text text-left">DESCRIPTION</p>
-                      <a class="btn btn-outline-info align-bottom" style="vertical-align: bottom" href="ADD LINK" target="_blank">
-						<span>BUTTON TEXT</span>
-	  			      </a>
-                   </div>
-			    </div>
-                </div>
-		   </div>
-       </div>-->
-       <br><br>
-    
-</div> 
-<!--End Third Row-->
+             </div>
+          </div>
+          <div class="col-md">
+             <div class="card">
+                <div class="card-body">
+                   <h4 class="card-title">Student Guide to Gainesville</h4>
+                   <p class="card-text">Reach beyond campus and explore Gainesville</p>
+                   <br><br>
+                   <a href="studentguide.html" class="btn btn-primary cog-btn-jade">Student Guide</a>
 
+                </div>
+             </div>
+          </div>
+       </div>
+       <br/>
+       <br/>
+       <br>
+    </div>
+
+<!--Coming Soon-->      
+   <div class="container">
+       <div class="row text-center">
+          <div class="col-lg-6 offset-lg-3"></div>
+       </div>
+       <br>
+       <br>
+       <div class="row">
+          <div class="col-md">
+             <div class="card">
+                <div class="card-body">
+                   <h4 class="card-title">Visiting Gainesville</h4>
+                   <p class="card-text">What to do while you're in town</p>
+						<br><span class="badge badge-pill badge-secondary">Coming Soon</span>                    
+                   <br><br>
+                </div>
+             </div>
+          </div>
+          <div class="col-md">
+             <div class="card">
+                <div class="card-body">
+                   <h4 class="card-title">Living in Gainesville</h4>
+                   <p class="card-text">Get involved in Gainesville</p>
+						<br><span class="badge badge-pill badge-secondary">Coming Soon</span>                    
+                   <br><br>
+                </div>
+             </div>
+          </div>
+          <div class="col-md">
+             <div class="card">
+                <div class="card-body">
+                   <h4 class="card-title">Professional's Guide</h4>
+                   <p class="card-text">Gainesville is a great place to work</p>
+						<br><span class="badge badge-pill badge-secondary">Coming Soon</span>                    
+                   <br><br>
+                </div>
+             </div>
+          </div>
+       </div>
+       <br/>
+       <br/>
+       <br>
+    </div>
     
+
+<br><br><br>
+      
 <!--Footer-->      
-    <nav class="navbar navbar-expand-lg bg-blue-cool-90">
+    <nav class="navbar navbar-expand-lg cog-bg-navy">
        <a class="navbar-brand" href="https://www.cityofgainesville.org/"><img src="img/gainesville-fl-seal.png" width="75" height="75" alt="Gainesville FL Seal"></a>
-           <p class="text-center text-white">&copy; City of Gainesville 2020<a href="#" ></a></p>
+           <p class="text-center cog-white">&copy; City of Gainesville 2020<a href="#" ></a></p>
         <div class="col-sm text-right">
 				<p class="font-weight-bold; text-light">City's social media channels:</p>
       			<h3><a class="text-light" target="_blank" href="https://facebook.com/GainesvilleFL/?"><i class="fab fa-facebook"></i></a>
@@ -475,14 +266,17 @@ a:visited{
 				<p class="font-weight-bold; text-light"><a href="mailto:designGNV@cityofgainesville.org" style="color: white; text-decoration: none">Contact us</a></p>
         </div>
     </nav>
-<!--End Footer-->  
+<!--End Footer-->
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="js/jquery-3.3.1.min.js"></script>
 
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap-4.3.1.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.3.1.js"></script>
   </body>
-
 </html>
+
+
+
